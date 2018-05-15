@@ -1,0 +1,25 @@
+<ons-page>
+    <ons-toolbar ng-style="{'background-color':topbarBG}">
+        <div class="left">
+            <ons-back-button></ons-back-button>
+        </div>
+        <div class="center">Discount VOUCHERS</div>
+        <div class="right"></div>
+    </ons-toolbar>
+    <div class="topBanner">
+        <img src="{{subBanner}}" style="max-width: 800px; width: 100%;" />
+    </div>
+    <h2 class="myHeader"><span>VOUCHER CATEGORIES:</span></h2>
+    <ons-list>
+        <ons-list-item modifier="chevron" ng-repeat="partner in catList" ng-click="getDiscountList(partner.partner_category);">
+            <ons-row>
+                <ons-col width="60px">
+                    <img src="images/{{partner.partner_category}}.png" />
+                </ons-col>
+                <ons-col>
+                    <h4 class="listHeadings">{{partner.partner_category}}</h4>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+    </ons-list>
+</ons-page>

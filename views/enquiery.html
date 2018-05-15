@@ -1,0 +1,106 @@
+<ons-page>
+    <ons-toolbar ng-style="{'background-color':topbarBG}">
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">Enquiry Now</div>
+        <div class="right"></div>
+    </ons-toolbar>
+    <div class="topBanner">
+        <div><img src="{{Banner3}}" style="max-width: 800px; width: 100%;" /></div>
+    </div>
+    <h2 class="myHeader"><span>CONTACT US</span></h2>
+    <h2 class="myHeader"><span>CONTACT ME ABOUT:</span></h2>
+    <p class="text-center">PLEASE ENTER YOUR CONTACT DETAILS BELOW</p>
+    <div class="formShadow">
+        <div class="formList">
+            <div class="formListLable">ABOUT:</div>
+            <div class="formListInput">
+                <select ng-model="data.contactRefer" style="width:100%;">
+                    <option value="">Select option</option>
+                    <option value="First time buyer">First time buyer</option>
+                    <option value="Luxury homes">Luxury homes</option>
+                    <option value="Retirement">Retirement</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Rental">Rental</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Benefits of Homeownership Seminar">Benefits of Homeownership Seminar</option>
+                </select>
+            </div>
+        </div>
+        <div class="formList">
+            <div class="formListLable">BRANCH:</div>
+            <div class="formListInput">
+                <select ng-model="data.contactCare" style="width:100%;">
+                    <option value="">Selecy Branch</option>
+                    <option value="Cape Town">Cape Town</option>
+                    <option value="Gauteng">Gauteng</option>
+                </select>
+            </div>
+        </div>
+        <h4>Your Details:</h4>
+        <div class="formList">
+            <div class="formListLable">NAME:</div><div class="formListInput"><input ng-model="data.contactName" type="text" class="text-input" placeholder="Name" /></div>
+        </div>
+        <div class="formList">
+            <div class="formListLable">SURNAME:</div><div class="formListInput"><input ng-model="data.contactSurname" type="text" class="text-input" placeholder="Surname" /></div>
+        </div>
+        <div class="formList">
+            <div class="formListLable">ID NUMBER:</div><div class="formListInput"><input ng-model="data.contactId" type="text" class="text-input" placeholder="ID Number" /></div>
+        </div>
+        <div class="formList">
+            <div class="formListLable">CELL:</div><div class="formListInput"><input ng-model="data.contactCell" type="text" class="text-input" placeholder="Cell number" /></div>
+        </div>
+        <div class="formList">
+            <div class="formListLable">EMAIL:</div><div class="formListInput"><input ng-model="data.contactEmail" type="text" class="text-input" placeholder="Email address" /></div>
+        </div>
+        <div class="formList">
+            <div class="formListLable">Best time to call:</div>
+            <div class="formListInput">
+                <select ng-model="data.contactTime" style="width:100%;">
+                    <option value="">Select time to call</option>
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+            </div>
+        </div>
+        <h4>Refer a friend - Friend’s details:</h4>
+        <div class="formList">
+            <div class="formListLable">NAME:</div><div class="formListInput"><input ng-model="data.contactFName" type="text" class="text-input" placeholder="Name" /></div>
+        </div>
+        <div class="formList">
+            <div class="formListLable">SURNAME:</div><div class="formListInput"><input ng-model="data.contactFSurname" type="text" class="text-input" placeholder="Surname" /></div>
+        </div>
+        <div class="formList">
+            <div class="formListLable">CELL:</div><div class="formListInput"><input ng-model="data.contactFCell" type="text" class="text-input" placeholder="Cell number" /></div>
+        </div>
+        <div class="formList">
+            <div class="formListLable">Best time to call:</div>
+            <div class="formListInput">
+                <select ng-model="data.contactFTime" style="width:100%;">
+                    <option value="">Select time to call</option>
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div style="padding:20px">
+        <p>We will respond to your enquiry within 48 hours.</p>
+        <ons-button modifier="large" id="btnLogIn" ng-click="contactMe()" style="width:100%">SUBMIT</ons-button>
+    </div>
+</ons-page>

@@ -1,0 +1,42 @@
+<ons-page>
+    <ons-toolbar ng-style="{'background-color':topbarBG}">
+        <div class="left">
+            <ons-back-button></ons-back-button>
+        </div>
+        <div class="center">Profile</div>
+        <div class="right"></div>
+    </ons-toolbar>
+    <div class="topBanner">
+        <div class="imgBlock hideableW" style="display: block;"><img src="{{Banner1}}" style="max-width: 800px; width: 100%;" /></div>
+        <div class="imgBlock hideableW" style="display: none;"><img src="{{Banner2}}" style="max-width: 800px; width: 100%;" /></div>
+        <div class="imgBlock hideableW" style="display: none;"><img src="{{Banner3}}" style="max-width: 800px; width: 100%;" /></div>
+        <div class="imgBlock hideableW" style="display: none;"><img src="{{Banner4}}" style="max-width: 800px; width: 100%;" /></div>
+        <div class="imgBlock hideableW" style="display: none;"><img src="{{Banner5}}" style="max-width: 800px; width: 100%;" /></div>
+        <div class="imgBlock hideableW" style="display: none;"><img src="{{Banner6}}" style="max-width: 800px; width: 100%;" /></div>
+    </div>
+    <h2 class="myHeader"><span>PROFILE</span></h2>
+    <ons-row align="center">
+        <ons-col><ons-button modifier="large light" onclick="myNavigator.pushPage('views/user/my_profile.html', { animation : 'slide' } )">
+            <img src="images/icons/PROFILE.png" style="width: 75px;" /><br>
+            PERSONAL DETAILS
+        </ons-button></ons-col>
+    </ons-row>
+    <ons-row align="center">
+        <ons-col><ons-button modifier="large light" onclick="myNavigator.pushPage('views/user/balance.html', { animation : 'slide' } )">
+            <img src="images/icons/BALANCE.png" style="width: 75px;" /><br>
+            BALANCE
+        </ons-button></ons-col>
+    </ons-row>
+    <ons-row align="center">
+        <ons-col><ons-button modifier="large light" onclick="myNavigator.pushPage('views/user/my_card.html', { animation : 'slide' } )">
+            <img src="images/icons/VIRTUAL-CARD.png" style="width: 75px;" /><br>
+            VIRTUAL CARD
+        </ons-button></ons-col>
+    </ons-row>
+    <ons-row align="center">
+        <ons-col><ons-button modifier="large light" ng-click="logout()">
+            <img src="images/icons/LOGIN.png" style="width: 75px;" /><br>
+            LOG OUT
+        </ons-button></ons-col>
+    </ons-row>
+</ons-page>

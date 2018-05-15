@@ -1,0 +1,16 @@
+<ons-page>
+    <ons-toolbar ng-style="{'background-color':topbarBG}">
+        <div class="left">
+            <ons-back-button></ons-back-button>
+        </div>
+        <div class="center">Tutorial</div>
+        <div class="right"></div>
+    </ons-toolbar>
+    <div class="topBanner">
+        <div><img src="{{Banner4}}" style="max-width: 800px; width: 100%;" /></div>
+    </div>
+    <h2 class="myHeader"><span>TUTORIAL</span></h2>
+    <img src="images/Tutorial_Video.png" style="max-width: 800px; width: 100%;" onclick="window.open('https://youtu.be/aSfscMyIr8Q','_system','')" />
+    <br />
+    <img src="images/Tutorial_Cartoon.jpg" style="max-width: 800px; width: 100%;" onclick="myNavigator.pushPage('views/tutorial.html', { animation : 'slide' } )" />
+</ons-page>

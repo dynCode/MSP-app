@@ -1,0 +1,20 @@
+<ons-page>
+    <ons-toolbar ng-style="{'background-color':topbarBG}">
+        <div class="left">
+            <ons-back-button></ons-back-button>
+        </div>
+        <div class="center">Virtual Card</div>
+        <div class="right">
+        </div>
+    </ons-toolbar>
+    <h2 class="myHeader"><span>VIRTUAL CARD</span></h2>
+    <div style="padding: 0 20px">
+        <p>With your Virtual Card you’ll never leave home without missing a deal! </p>
+    </div>
+    <div ons-if-orientation="portrait" style="text-align: center; width: 100%;">
+        <img src='http://mspproperty.mobi/api/class/test_1D.php?text={{CardNumber}}&rotate=270&comid={{comId}}' style="margin: auto; width: 100%;" />
+    </div>
+    <div ons-if-orientation="landscape" style="text-align: center; width: 100%;">
+        <img src='http://mspproperty.mobi/api/class/test_1D.php?text={{CardNumber}}&rotate=0&comid={{comId}}' style="margin: auto; width: 100%;" />
+    </div>
+</ons-page>

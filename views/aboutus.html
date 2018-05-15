@@ -1,0 +1,28 @@
+<ons-page>
+    <ons-toolbar ng-style="{'background-color':topbarBG}">
+        <div class="left">
+            <ons-back-button></ons-back-button>
+        </div>
+        <div class="center">About Us</div>
+        <div class="right"></div>
+    </ons-toolbar>
+    <div class="topBanner">
+        <div><img src="{{Banner2}}" style="max-width: 800px; width: 100%;" /></div>
+    </div>
+    <h2 class="myHeader"><span>ABOUT US</span></h2>
+    <hr>
+    <div style="padding:0 20px">
+        <p style="text-align: justify;">Our lives tell the story of new beginnings. Firsts. Lasts. A thousand opened doors. Choices that made us who we are. Choices that define who we want to be. That’s why we don’t sell property. Because people don’t buy property. People buy their next move in life. From first flats to family homes. To Investing in a brighter future; or simply enough room for your child to run. We sell more than bricks, mortar and concrete.</p>
+
+		<p style="text-align: justify;">At MSP, we sell movement. Sure, people move into the houses we build, but to move means so much more. To move is to better our lives.</p>
+    </div>
+	<ons-row align="center">
+        <ons-col size="50%"><ons-button modifier="large light" onclick="myNavigator.pushPage('views/products/properties.html', { animation : 'slide' } )"><img src="images/icons/MSP-PROPERTIES.png" style="width: 75px;" /><br>PROPERTIES</ons-button></ons-col>
+        <ons-col size="50%"><ons-button modifier="large light" onclick="window.open('http://msp.finance/','_system','')"><img src="images/icons/MSP-FINANCE.png" style="width: 75px;" /><br>FINANCE</ons-button></ons-col>
+    </ons-row>
+    <ons-row align="center">
+        <ons-col size="50%"><ons-button modifier="large light" onclick="myNavigator.pushPage('views/products/advice.html', { animation : 'slide' } )"><img src="images/icons/MSP-ADVICE.png" style="width: 75px;" /><br>ADVICE </ons-button></ons-col>
+        <ons-col size="50%"><ons-button modifier="large light" onclick="myNavigator.pushPage('views/products/siminar.html', { animation : 'slide' } )"><img src="images/icons/MSP-BENEFITS.png" style="width: 75px;" /><br>BENEFITS OF HOME<br>OWNERSHIP SEMINARS</ons-button></ons-col>
+    </ons-row>
+    <div style="padding:0 20px"><a href="#" onclick="myNavigator.pushPage('views/feedback.html', { animation : 'lift' } )">Problems?</a></div>
+</ons-page>

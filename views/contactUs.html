@@ -1,0 +1,16 @@
+<ons-page>
+    <ons-toolbar ng-style="{'background-color':topbarBG}">
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">Contact Us</div>
+        <div class="right"></div>
+    </ons-toolbar>
+    <div class="topBanner">
+        <div><img src="{{Banner2}}" style="max-width: 800px; width: 100%;" /></div>
+    </div>
+    <h2 class="myHeader"><span>CONTACT US</span></h2>
+    <div style="padding: 0 20px 10px 20px;">
+        <div ng-bind-html="cuPage | to_trusted"></div> 
+    </div>
+</ons-page>
