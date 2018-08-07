@@ -14,6 +14,10 @@
         <div class="imgBlock hideableW" style="display: none;"><img src="{{Banner5}}" style="max-width: 800px; width: 100%;" /></div>
         <div class="imgBlock hideableW" style="display: none;"><img src="{{Banner6}}" style="max-width: 800px; width: 100%;" /></div>
     </div>
+    <ons-row align="center">
+        <ons-col size="90%"><div class="formListInputLrg"><input type="search" class="search-input" ng-model="data.quickSearch" placeholder="Quick search for a shop / deal"></div></ons-col>
+        <ons-col size="10%"><ons-button ng-click="quickSearch()"><ons-icon icon="fa-search"></ons-button></ons-col>
+    </ons-row>
     <h2 class="myHeader"><span>PROFILE</span></h2>
     <ons-row align="center">
         <ons-col><ons-button modifier="large light" onclick="myNavigator.pushPage('views/user/my_profile.html', { animation : 'slide' } )">

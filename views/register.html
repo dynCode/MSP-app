@@ -9,6 +9,10 @@
     <div class="topBanner">
         <div><img src="{{Banner2}}" style="max-width: 800px; width: 100%;" /></div>
     </div>
+    <ons-row align="center">
+        <ons-col size="90%"><div class="formListInputLrg"><input type="search" class="search-input" ng-model="data.quickSearch" placeholder="Quick search for a shop / deal"></div></ons-col>
+        <ons-col size="10%"><ons-button ng-click="quickSearch()"><ons-icon icon="fa-search"></ons-button></ons-col>
+    </ons-row>
     <h2 class="myHeader"><span>SIGN UP</span></h2>
     <div class="formList"><strong>HOW ARE YOU SIGNING UP?</strong></div>
     <div style="padding: 0px 20px 20px 10px;">
@@ -148,6 +152,14 @@
         </div>
         <div class="form-row formListInputLrg">
             <input type="text" class="text-input" ng-model="data.reg_Suburb" placeholder="Suburb" value="">
+        </div>
+    </div>
+    <div id="HideMe">
+        <div class="formList"><strong>Enter Member No:</strong></div>
+        <div style="padding: 0px 20px 20px 10px;">
+            <div class="form-row formListInputLrg">
+                <input type="text" class="text-input" id="memberCode" ng-model="data.reg_memberCode" placeholder="Member No" />
+            </div>
         </div>
     </div>
     <p></p>

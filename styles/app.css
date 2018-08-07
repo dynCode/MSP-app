@@ -40,7 +40,29 @@ a {
 }
 
 .search .list__item--chevron:before {
+    color: #f36f21;
+}
+
+.retail .list__item--chevron {
+    text-align: left;
+    padding: 5px 20px;
+    color: #606062;
+}
+
+.retail .list__item--chevron:before {
     color: #ce282c;
+}
+
+.stamps {
+    width: 100%;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stamps div{
+    width: 33%;
 }
 
 /*partner list*/
@@ -174,7 +196,7 @@ a {
     width:100%;
 }
 
-.formListInputLrg > input[type=text], input[type=password], input[type=number], select {
+.formListInputLrg > input[type=text], input[type=password], input[type=number], select, input[type=search] {
     border-radius: 0px;
     background: #eee;
     border-color: #eee;
